@@ -3,6 +3,9 @@
 // Only add code (e.g., helper methods, variables, etc.) within the scope
 // of the anonymous function on line 6
 
+
+const polybiusModule = (function () {
+ // this function will both encode and decode using the polyibus method
 const polybiusCipherArray = {
   a: 11, b: 21, c:31, d:41, e:51,
   f: 12, g: 22, h:32, i:42, j:42, k: 52,
@@ -18,9 +21,6 @@ const polybiusDecoderKeyArray = {
   14:"q", 24:"r", 34:"s", 44:"t", 54:"u",
   15:"v", 25:"w", 35:"x", 45:"y", 55:"z",
 }
-const polybiusModule = (function () {
- // you can add any code you want within this function scope
-
   function polybius(input, encode = true) {
     // your solution code here
     if(encode === false){

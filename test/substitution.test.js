@@ -46,4 +46,12 @@ describe('substitution()', () =>{
         const actual = substitution(input, alphabet, false);
         expect(actual).to.equal(expected);
     })
+    it("Should encode the message given", () => {
+        const input = 'message';
+        const alphabet = 'plmoknijbuhvygctfxrdzeswaq';
+        const expected = 'ykrrpik';
+        const actual = substitution(input, alphabet);
+        expect(actual).to.equal(expected);
+    })
 })
+
